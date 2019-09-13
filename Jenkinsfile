@@ -18,6 +18,7 @@ pipeline {
                 apt install unzip -y
                 apt install php-zip -y
                 '''
+                cleanWs()
                 /**
                  * Install composer
                  */
