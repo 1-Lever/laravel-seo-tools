@@ -14,6 +14,8 @@ pipeline {
                  */
                 sh '''apt-get update -q
                 apt-get install git -y
+                apt install zip -y
+                apt install unzip -y
                 '''
                 /**
                  * Install composer
