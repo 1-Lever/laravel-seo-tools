@@ -16,6 +16,7 @@ pipeline {
                 apt-get install git -y
                 apt install zip -y
                 apt install unzip -y
+                apt install php-zip -y
                 '''
                 /**
                  * Install composer
