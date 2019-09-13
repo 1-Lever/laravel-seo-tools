@@ -14,6 +14,7 @@ pipeline {
                  */
                 sh '''apt-get update -q
                 apt-get install git -y
+                apt-get docker git -y
                 '''
                 /**
                  * Install composer
