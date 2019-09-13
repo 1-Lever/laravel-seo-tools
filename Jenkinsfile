@@ -6,6 +6,12 @@ pipeline {
             args '-u root:sudo'
         } 
     }
+    stage('delete files from workspace') {
+        steps {
+            sh 'ls -l'
+            sh 'sudo rm -rf ./*'
+        }
+    }
     stages {
         stage('build') {
             steps {
